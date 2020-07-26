@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOrget Password</title>
+    <base href="/" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+
+<body>
+    <section class="forget-form">
+        <div class="mycontainer">
+
+            <div class="form-side">
+                <h1 class="h1">Forget Your Password</h1>
+                <p class="p1">We get it, stuff Happens. Just enter your email address below and we'll send yo a link to
+                    reset your password!</p>
+                <div class="form">
+                    <form onsubmit="handleSubmit(event)">
+                        <input type="email" name="email" id="" placeholder="Enter Email Address" class="form3input1">
+                        <div id="msg" class="msg"></div>
+                        <input type="submit" value="Reset Password" class="form3-btn">
+                    </form>
+                </div>
+                <div class="anchors">
+                    <ul>
+                        <li>
+                            <a href="signup-form.html">Create An Account</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Already have an Account? Login!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/forget.js"></script>
+</body>
+
+</html>

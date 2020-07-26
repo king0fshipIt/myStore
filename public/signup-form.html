@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <base href="/" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://kit.fontawesome.com/fdd052dd75.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="signup-form">
+        <div class="mycontainer">
+
+            <div class="form-side">
+                <h1 class="h1">Create An Account</h1>
+                <div class="form">
+                    <form onsubmit="handleSubmit(event)">
+                        <input required type="text" name="fname" id="" placeholder="First Name" class="form2input1">
+                        <input required type="text" name="lname" id="" placeholder="Last Name" class="form2input2">
+                        <input required type="email" name="email" id="" placeholder="Email Address" class="form2input3">
+                        <input required type="password" name="password" id="" placeholder="Password"
+                            class="form2input4">
+                        <input required type="password" name="rep_pass" id="" placeholder="Repeat Password"
+                            class="form2input5">
+                        <input type="text" name="promo_code" id="" placeholder="Have a Promocode" class="form2input6">
+                        <div class="g-recaptcha captcha-widget" data-size="normal" data-callback="captchaSuccess"
+                            data-expired-callback="captchaExpired" data-error-callback="captchaError"
+                            data-sitekey="6LcFFf4UAAAAAPy9WUbpYx4ToJi3YeOS3bCevNhs"></div>
+                        <div class="" id="msg"></div>
+                        <input type="submit" value="Register Account" class="form2-btn">
+                        <a href="/auth/facebook"><button class="form1-btn fb-login-btn" type="button"><i
+                                    class="fab fa-facebook-f"></i>Login with facebook</button></a>
+                    </form>
+                </div>
+                <div class="anchors">
+                    <ul>
+                        <li>
+                            <a href="forget.html">Forget Password?</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Already have an Account? Login!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/signup.js"></script>
+</body>
+
+</html>

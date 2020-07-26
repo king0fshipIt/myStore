@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <base href="/" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/fdd052dd75.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <header class="site-header">
+            <div class="mycontainer">
+                <div class="sidebar-container">
+                    <div class="side-bar sidebar" id="mySidebar">
+                        <div>
+                            <span class="close-sidebar-btn" onclick="sidebar_close()">x</span>
+                        </div>
+                        <ul>
+
+                            <li><img src="images/icons/meter1.png" alt=""><a href="./dashboard.html">Dashboard</a></li>
+                            <li><i class="fas fa-user-tie"></i><a href="./profile.html">Profile</a></li>
+                            <li><i class="fas fa-address-card"></i><a href="./about.html">About</a></li>
+                        </ul>
+                        <ul>Buy:
+                            <li><img src="images/icons/display1.png" alt=""><a href="./buy-pc.html">PC</a></li>
+                            <li><img src="images/icons/mobile1.png" alt=""><a href="./buy-cell.html">Cell Phone</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="fas fa-sign-out-alt"></i>
+                                <a href="/users/logout">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <button class="menu-btn-nav" onclick="sidebar_open()">&#9776;</button><span class="menu-label"
+                        onclick="sidebar_open()">Menu</span>
+                </div>
+            </div>
+        </header>
+        <section class="body">
+            <div class="mycontainer">
+                <div class="side-bar">
+                    <ul id="purchases">My Purchases
+                    </ul>
+                </div>
+                <div class="main-content">
+                    <div class="products" id="products">
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="p-details" id="p-details">
+                    </div>
+                    <div class="payment" id="payment">
+                        <h3>Pay with Visa/MasterCard</h3>
+                        <div>
+                            <form onsubmit="handleSubmit(event)" class="payment-form">
+                                <div class="form-control">
+                                    <label>Quantity</label>
+                                    <input required type="number" name="quantity" />
+                                </div>
+                                <div class="form-control">
+                                    <label>Card Number</label>
+                                    <input required type="number" name="card_number" />
+                                </div>
+                                <div class="form-control">
+                                    <label>Name</label>
+                                    <input required type="text" name="name" />
+                                </div>
+                                <div class="form-control3">
+                                    <label>Expiry</label>
+                                    <input required type="number" size="4" min="2015" max="2025" placeholder="YYYY"
+                                        name="expiry_year" />
+                                    <input required type="number" size="2" min="1" max="12" placeholder="MM"
+                                        name="expiry_month" />
+                                </div>
+                                <div class="form-control2">
+                                    <label>CVV</label>
+                                    <input required type="number" name="cvv" />
+                                </div>
+                                <div class="form-control">
+                                    <label>Expiry</label>
+                                    <input type="submit" value="Pay" class="submit" />
+                                </div>
+                                <p class="msg" id="msg"></p>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/buyCell.js"></script>
+</body>
+
+</html>

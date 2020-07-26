@@ -1,0 +1,82 @@
+[
+	{
+      "name": "iPhone X",
+      "model": "Cell Phone",
+	  "in stock": "true",
+      "description": "Best smartphone ever",
+      "models": [
+        {
+          "name": "1",
+          "model": "32 GB",
+          "warranty": "2 month of warranty",
+          "price": "200"
+        },
+        {
+          "name": "2",
+          "model": "128 GB",
+          "warranty": "4 month warranty",
+		  "price": "500"
+        },
+        {
+          "name": "3",
+          "model": "512 GB",
+          "warranty": "life time warranty",
+          "price": "700"
+        }
+      ]
+    },
+    {
+      "name": "iPhone 7",
+      "model": "Cell Phone",
+	  "in stock": "true",
+      "description": "Just the right phone for you",
+      "models": [
+        {
+          "name": "1",
+          "model": "32 GB",
+          "warranty": "1 month of warranty",
+          "price": "150"
+        },
+        {
+          "name": "2",
+          "model": "128 GB",
+          "warranty": "3 month warranty",
+		  "price": "200"
+        },
+        {
+          "name": "3",
+          "model": "256 GB",
+          "warranty": "4 month warranty",
+          "price": "400"
+        }
+      ]
+    },
+	{
+      "name": "Samsung S8",
+      "model": "Cell Phone",
+	  "in stock": "true",
+      "description": "The first in it's class",
+      "models": [
+        {
+          "name": "1",
+          "model": "256 GB",
+          "warranty": "life time warranty",
+          "price": "600"
+        },
+        {
+          "name": "2",
+          "model": "512 GB",
+          "warranty": "life time warranty",
+		  "price": "850"
+        }
+      ]
+    },
+	{
+      "name": "Huwawei P10",
+      "model": "Cell Phone",
+	  "in stock": "false",
+      "description": "The most advanced phone",
+      "models": [
+      ]
+    }
+]

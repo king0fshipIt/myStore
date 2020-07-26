@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <base href="/" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/fdd052dd75.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <header class="site-header">
+            <div class="mycontainer">
+                <div class="sidebar-container">
+                    <div class="side-bar sidebar" id="mySidebar">
+                        <div>
+                            <span class="close-sidebar-btn" onclick="sidebar_close()">x</span>
+                        </div>
+                        <ul>
+
+                            <li><img src="images/icons/meter1.png" alt=""><a href="./dashboard.html">Dashboard</a></li>
+                            <li><i class="fas fa-user-tie"></i><a href="./profile.html">Profile</a></li>
+                            <li><i class="fas fa-address-card"></i><a href="./about.html">About</a></li>
+                        </ul>
+                        <ul>Buy:
+                            <li><img src="images/icons/display1.png" alt=""><a href="./buy-pc.html">PC</a></li>
+                            <li><img src="images/icons/mobile1.png" alt=""><a href="./buy-cell.html">Cell Phone</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="fas fa-sign-out-alt"></i>
+                                <a href="/users/logout">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <button class="menu-btn-nav" onclick="sidebar_open()">&#9776;</button><span class="menu-label"
+                        onclick="sidebar_open()">Menu</span>
+                </div>
+            </div>
+        </header>
+        <section class="body">
+            <div class="mycontainer">
+                <div class="side-bar">
+                    <ul id="purchases">My Purchases
+                    </ul>
+                </div>
+                <div class="profile">
+                    <form onsubmit="updateInfo(event);" class="profile-info-form">
+                        <div class="form-controll">
+                            <label for="fname">First Name</label>
+                            <input required type="text" id="fname" name="fname" placeholder="First Name">
+                        </div>
+                        <div class="form-controll">
+                            <label for="lname">Last Name</label>
+                            <input required type="text" id="lname" name="lname" placeholder="Last Name">
+                        </div>
+                        <div class="form-controll">
+                            <label for="lname">Email</label>
+                            <input required type="email" id="email" name="email" placeholder="Your email address">
+                        </div>
+                        <div class="msg" id="msg1">
+                        </div>
+                        <div class="prof-sub-btn">
+                            <button type="submit">Update Info</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/profile.js"></script>
+</body>
+
+</html>

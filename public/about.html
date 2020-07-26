@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <base href="/" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/fdd052dd75.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div>
+    <div class="main">
+      <header class="site-header">
+        <div class="mycontainer">
+          <div class="sidebar-container">
+            <div class="side-bar sidebar" id="mySidebar">
+              <div>
+                <span class="close-sidebar-btn" onclick="sidebar_close()">x</span>
+              </div>
+              <ul>
+
+                <li><img src="images/icons/meter1.png" alt=""><a href="./dashboard.html">Dashboard</a>
+                </li>
+                <li><i class="fas fa-user-tie"></i><a href="./profile.html">Profile</a></li>
+                <li><i class="fas fa-address-card"></i><a href="./about.html">About</a></li>
+              </ul>
+              <ul>Buy:
+                <li><img src="images/icons/display1.png" alt=""><a href="./buy-pc.html">PC</a></li>
+                <li><img src="images/icons/mobile1.png" alt=""><a href="./buy-cell.html">Cell Phone</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <i class="fas fa-sign-out-alt"></i>
+                  <a href="/users/logout">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content">
+            <button class="menu-btn-nav" onclick="sidebar_open()">&#9776;</button><span class="menu-label"
+              onclick="sidebar_open()">Menu</span>
+          </div>
+        </div>
+      </header>
+      <section class="body">
+        <div class="mycontainer">
+          <div class="side-bar">
+            <ul id="purchases">My Purchases
+            </ul>
+          </div>
+          <div class="main-content" >
+            <div class="about-us-div">
+              <h2>About us</h2>
+              <ul class="about-us-ul">
+                <li>Phone: <a style ="color:white;" href="tel:0522443361">052-0000000</a></li>
+                <li>Email: <a style ="color:white;" href="mailto:jaraisy.fares@gmail.com">Kingstore4u@gmail.com</a></li>
+               
+                <li>Facebook: <a style ="color:white;" href="https://www.facebook.com"><i
+                      class="fab fa-facebook-square"></i style ="color:white;">/store team</a></li>
+                <li><a style ="color:white;" href="https://www.fleetster.net/legal/standard-terms-and-conditions.pdf">terms
+                    and
+                    conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="./js/thanks.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,670 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  max-width: 100%;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+ul > li {
+  list-style-type: none;
+}
+
+.mycontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+.toto {
+  background: url("../images/thanks.jpg");
+  background-position: center;
+
+
+}
+
+.site-header {
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 30px -16px rgba(0, 0, 0, 0.5);
+}
+.site-header .content {
+  width: 100%;
+
+}
+.site-header .log-in {
+  width: 430px;
+  min-height: 40px;
+  float: right;
+}
+.site-header .log-in ul {
+  min-height: 40px;
+}
+.site-header .log-in ul li {
+  float: right;
+  padding: 5px 15px;
+  border-right: 1px solid #c1e3dc;
+}
+.site-header .log-in ul li img {
+  float: left;
+}
+.site-header .log-in ul li a {
+  font-size: 20px;
+  line-height: 30px;
+  color: #c1e3dc;
+  display: inline-block;
+}
+.site-header .log-in ul li .span {
+  font-size: 20px;
+  line-height: 30px;
+  color: #c1e3dc;
+  display: inline-block;
+}
+.site-header .log-in ul li .span img {
+  float: unset;
+  width: 40px;
+  border-radius: 40px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: -7px;
+}
+.site-header .log-in ul li:last-child {
+  border: none;
+}
+.site-header .h1 {
+  font-size: 56px;
+  color: #000000;
+  padding: 75px 0px;
+}
+.sidebar-container {
+  position: relative;
+}
+.sidebar-container .sidebar {
+  position: absolute;
+  height: 100vh;
+  display: none;
+  width: 250px;
+  background: #c1e3dc;
+}
+.sidebar-container .sidebar ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 40px;
+  color: #ffffff;
+  background-color: #c1e3dc;
+  padding: 5px 0px;
+  font-size: 20px;
+  width: 240px;
+}
+/* .sidebar-container .sidebar ul li i{
+  font-size: 32px;
+  display: flex;
+  color: #FFFFFF;
+} */
+.sidebar-container .sidebar ul {
+  background-color: #c1e3dc;
+}
+.body {
+  clear: both;
+}
+.body .side-bar {
+  width: 250px;
+}
+.body .side-bar ul,
+.sidebar ul {
+  background-color: #c1e3dc;
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+  padding-left: 10px;
+}
+.body .side-bar ul li,
+.sidebar ul li {
+  display: inline-block;
+  min-height: 40px;
+  background-color: #c1e3dc;
+  padding: 5px 0px;
+  width: 240px;
+}
+.body .side-bar ul li a,
+.sidebar ul li a {
+  color: #ffffff;
+  padding-left: 10px;
+}
+.body .side-bar ul li img,
+.sidebar ul li img {
+  float: left;
+  padding-top: 4px;
+  width: 20px;
+}
+.body .side-bar ul li .pic img,
+.sidebar ul li .pic img {
+  float: left;
+  padding-top: 4px;
+  width: 70px;
+}
+.main-content.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.main-content.cards a {
+  display: block;
+  width: 320px;
+  height: 200px;
+  margin: 20px 5px;
+}
+.main-content.cards a:hover {
+  display: block;
+  width: 350px;
+  height: 205px;
+  margin: 20px 5px;
+}
+.main-content.cards a:active {
+  color: black;
+}
+.main-content.cards .card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 8px 2px grey;
+
+  /* padding-top: 80px; */
+}
+.main-content.cards .card h2 {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+.main-content.cards .card.c1 {
+  background: url("../images/pc.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-content.cards .card.c2 {
+  background: url("../images/cell-phone.jpg");
+  background-size: cover;
+}
+/* login-page css */
+
+.login-form,
+.signup-form,
+.forget-form,
+.update-form {
+  position: relative;
+  /* padding: 100px 0px; */
+  background: url("../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.login-form .image-side,
+.signup-form .image-side,
+.forget-form .image-side,
+.update-form .image-side {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.login-form .image-side img,
+.signup-form .image-side img,
+.forget-form .image-side img,
+.update-form .image-side img {
+  width: 100%;
+}
+.login-form .form-side,
+.signup-form .form-side,
+.forget-form .form-side,
+.update-form .form-side {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 0px 100px;
+  margin: 0 auto;
+}
+.forget-form .form-side {
+  padding: 100px;
+}
+.login-form .form-side .form,
+.signup-form .form-side .form,
+.forget-form .form-side .form {
+  border-bottom: 1px solid #c1e3dc;
+}
+.login-form .form-side .h1,
+.signup-form .form-side .h1,
+.forget-form .form-side .h1,
+.update-form .form-side .h1 {
+  font-size: 32px;
+  /* color: #000000; */
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.forget-form .form-side .p1 {
+  font-size: 17px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.form1input1,
+.form1input2,
+.form2input3,
+.form2input6,
+.form3input1 {
+  width: 100%;
+  height: 45px;
+  color: #000000;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 55px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  font-size: 17px;
+}
+.form2input1,
+.form2input2,
+.form2input4,
+.form2input5,
+.form4input1,
+.form4input2 {
+  width: 47%;
+  height: 45px;
+  outline: none;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 55px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  font-size: 17px;
+}
+.form2input1,
+.form2input4,
+.form4input1 {
+  float: left;
+}
+.form2input2,
+.form2input5,
+.form4input2 {
+  float: right;
+}
+.form1-btn,
+.form2-btn,
+.form3-btn,
+.form4-btn {
+  width: 100%;
+  height: 55px;
+  color: #ffffff;
+  background-color: #c1e3dc;
+  border: none;
+  border-radius: 55px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 17px;
+}
+.form1-btn:hover,
+.form2-btn:hover,
+.form3-btn:hover,
+.form4-btn:hover {
+  color: #c1e3dc;
+  background-color: #ffffff;
+  border: 1px solid #c1e3dc;
+}
+.login-form .form-side .anchors,
+.signup-form .form-side .anchors,
+.forget-form .form-side .anchors {
+  text-align: center;
+  padding-top: 15px;
+}
+.login-form .form-side .anchors a,
+.signup-form .form-side .anchors a,
+.forget-form .form-side .anchors a {
+  font-size: 17px;
+  line-height: 20px;
+  color: #c1e3dc;
+}
+.form-side .anchors a:hover {
+  text-decoration: underline;
+}
+.products {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 0 0;
+}
+.products .item {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+  margin: 5px 5px;
+  padding: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.products .item.active {
+  background: gray;
+  color: white;
+}
+.products .item .item-d {
+  padding: 5px;
+}
+.products .item .pic {
+  width: 70px;
+  height: auto;
+}
+.products .item .pic img {
+  max-width: 100%;
+  max-height: 100px;
+}
+.p-details {
+  padding: 10px 10px;
+}
+.p-details .models {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.p-details .models .model {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+  cursor: pointer;
+  min-width: 115px;
+}
+.p-details .models .model.active {
+  background: gray;
+}
+.payment {
+  display: none;
+  margin: 10px;
+  padding: 10px;
+}
+.payment-form .form-control label,
+.payment-form .form-control2 label,
+.payment-form .form-control3 label {
+  width: 150px;
+  display: block;
+  float: left;
+  clear: both;
+}
+.payment-form .form-control3 label {
+  float: left;
+  width: 150px;
+  display: inline-block;
+}
+
+.payment-form .form-control input,
+.payment-form .form-control2 input {
+  width: 250px;
+  padding: 0 20px;
+  height: 40px;
+  margin: 3px 0;
+  border-radius: 5px;
+  border: 2px solid #c1e3dc;
+  color: #c1e3dc;
+  display: inline-block;
+}
+.payment-form .form-control3 input {
+  width: 122px;
+  float: left;
+  padding: 0 20px;
+  height: 40px;
+  margin: 3px 0;
+  border-radius: 5px;
+  border: 2px solid #c1e3dc;
+  color: #c1e3dc;
+  display: inline-block;
+}
+.payment-form .form-control input.submit {
+  background: #c1e3dc;
+  cursor: pointer;
+  outline: none;
+  color: white;
+}
+#msg {
+  margin: 0 0 15px 0;
+}
+
+/* dropdown css */
+.dropbtn {
+  height: 40px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  line-height: 40px;
+  background: rgb(148, 186, 222);
+}
+.dropbtn span {
+  height: 40px;
+  float: left;
+  line-height: 43px;
+}
+.dropbtn img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  background: rgb(148, 186, 222);
+}
+
+.dropdown {
+  position: relative;
+  float: right;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  right: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+/* Captcha */
+.captcha-widget {
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.fb-login-btn {
+  background: #3d6ad6;
+}
+.fb-login-btn i {
+  margin: 0 10px 0 0;
+}
+.about-us-div {
+  width: 100%;
+  box-shadow: 0px 0px 10px 1px grey;
+  margin: 15px;
+  padding: 20px;
+}
+.about-us-div h2 {
+  color: #ffffff;
+}
+.about-us-div ul li {
+  padding: 4px;
+  color: #ffffff;
+}
+.about-us-div ul li a {
+  color: #3d6ad6;
+  font-size: 18px;
+}
+.profile-info-form {
+  /* border-bottom: 1px solid gray; */
+  margin: 20px;
+}
+.profile-info-form:last-child {
+  border-bottom: none;
+}
+.profile-info-form .form-controll {
+  min-width: 300px;
+  max-width: 300px;
+  float: left;
+  margin: 10px;
+}
+.profile-info-form .form-controll label {
+  color: #ffffff;
+}
+.profile-info-form .form-controll input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+}
+
+.prof-sub-btn button {
+  padding: 12px 20px;
+  margin: 10px;
+  background: #3d6ad6;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.menu-btn-nav {
+  font-size: 24px;
+  padding: 2px 10px;
+  margin: 2px 10px;
+  cursor: pointer;
+}
+.menu-label {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+.close-sidebar-btn {
+  font-size: 30px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 1px 10px;
+  font-weight: 400;
+  float: right;
+  height: 38px;
+  margin: 10px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.main {
+  background: url("../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+@media (max-width: 992px) {
+  .login-form .form-side,
+  .signup-form .form-side,
+  .forget-form .form-side,
+  .update-form .form-side {
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 830px) {
+  .products {
+    width: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .form1input1,
+  .form1input2,
+  .form2input3,
+  .form2input6,
+  .form3input1,
+  .form2input1,
+  .form2input2,
+  .form2input4,
+  .form2input5,
+  .form4input1,
+  .form4input2,
+  .form1-btn,
+  .form2-btn,
+  .form3-btn,
+  .form4-btn {
+    height: 35px;
+    border-radius: 35px;
+    margin-bottom: 10px;
+    padding-left: 18px;
+
+    font-size: 14px;
+  }
+}
+@media (max-width: 667px) {
+  .login-form .image-side,
+  .signup-form .image-side,
+  .forget-form .image-side,
+  .update-form .image-side {
+    width: 40%;
+  }
+  .login-form .form-side .h1,
+  .signup-form .form-side .h1,
+  .forget-form .form-side .h1,
+  .update-form .form-side .h1 {
+    font-size: 26px;
+  }
+  .login-form .form-side,
+  .signup-form .form-side,
+  .forget-form .form-side,
+  .update-form .form-side {
+    width: 60%;
+  }
+}
+@media (max-width: 480px) {
+  .login-form .image-side,
+  .signup-form .image-side,
+  .forget-form .image-side,
+  .update-form .image-side {
+    display: none;
+  }
+  .login-form .form-side,
+  .signup-form .form-side,
+  .forget-form .form-side,
+  .update-form .form-side {
+    width: 310px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .mycontainer {
+    justify-content: center;
+  }
+  .mycontainer .side-bar {
+    width: 250px;
+  }
+  .mycontainer .side-bar ul li {
+    width: 100%;
+  }
+}

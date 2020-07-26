@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <base href="/" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://kit.fontawesome.com/fdd052dd75.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LfhE_4UAAAAAOV4aBYklIysPCB_gn9SgbgxRV5W"></script> -->
+</head>
+
+<body>
+    <section class="login-form">
+        <div class="mycontainer">
+            
+            <div class="form-side">
+                <h1 class="h1">Welcome Back!</h1>
+                <div class="form">
+                    <form onsubmit="handleSubmit(event)">
+                        <input type="email" name="email" id="" placeholder="Enter Your Email" class="form1input1">
+                        <input type="password" name="password" id="" placeholder="Enter Your Password"
+                            class="form1input2">
+                        <div class="g-recaptcha captcha-widget" data-size="normal" data-callback="captchaSuccess" data-expired-callback="captchaExpired" data-error-callback="captchaError" data-sitekey="6LcFFf4UAAAAAPy9WUbpYx4ToJi3YeOS3bCevNhs"></div>
+                        <div class="" id="msg"></div>
+                        <input type="submit" value="Login" class="form1-btn">
+                        <a href="/auth/facebook"><button class="form1-btn fb-login-btn" type="button"><i class="fab fa-facebook-f"></i>Login with facebook</button></a>
+                    </form>
+                </div>
+                <div class="anchors">
+                    <ul>
+                        <li>
+                            <a href="forget.html">Forget Password?</a>
+                        </li>
+                        <li>
+                            <a href="signup-form.html">Create An Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function ok(token){
+            console.log("ok");
+        }
+    </script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

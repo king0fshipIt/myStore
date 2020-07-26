@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+}
+ul > li
+{
+    list-style-type: none;
+}
+
+.mycontainer
+{
+    width: 1280px;
+    margin: 0px auto;
+}
+
+.site-header
+{
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px -16px rgba(0,0,0,0.5);
+}
+.site-header .log-in
+{
+    width: 700px;
+    min-height: 40px;
+    position: absolute;
+    right: 300px;
+    bottom: 10px;
+}
+.site-header .log-in ul li
+{
+    float: left;
+    padding: 5px 15px;
+    border-right: 1px solid #695bd0;
+}
+.site-header .log-in ul li img
+{
+    float: left;
+}
+.site-header .log-in ul li a
+{
+    font-size: 20px;
+    line-height: 30px;
+    color: #695bd0;
+    display: inline-block;
+}
+.site-header .log-in ul li .span
+{
+    font-size: 20px;
+    line-height: 30px;
+    color: #695bd0;
+    display: inline-block;
+}
+.site-header .log-in ul li .span img
+{
+    float: unset;
+    width: 40px;
+    border-radius: 40px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -7px;
+}
+.site-header .log-in ul li:last-child
+{
+    border: none;
+}
+.site-header .h1
+{
+    font-size: 56px;
+    color: #000000;
+    padding: 75px 0px;
+}
+.body
+{
+    clear: both;
+}
+.body .side-bar
+{
+    width: 250px;
+}
+.body .side-bar ul
+{
+    background-color: #695bd0;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    padding-left: 10px;
+}
+.body .side-bar ul li
+{
+    display: inline-block;
+    min-height: 40px;
+    background-color: #695bd0;
+    padding: 5px 0px;
+    width: 240px;
+}
+.body .side-bar ul li a
+{
+    color: #ffffff;
+    padding-left: 10px;
+}
+.body .side-bar ul li img {
+    float: left;
+    padding-top: 4px;
+    width: 20px;
+}
+
+
+
+
+/* login-page css */
+
+
+.login-form,
+.signup-form,
+.forget-form,
+.update-form
+{
+    position: relative;
+    padding: 100px 0px;
+}
+.login-form .image-side,
+.signup-form .image-side,
+.forget-form .image-side,
+.update-form .image-side
+{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.login-form .image-side img,
+.signup-form .image-side img,
+.forget-form .image-side img,
+.update-form .image-side img
+{
+    width: 100%;
+}
+.login-form .form-side,
+.signup-form .form-side,
+.forget-form .form-side,
+.update-form .form-side
+{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 0px 100px;
+}
+.login-form .form-side .form,
+.signup-form .form-side .form,
+.forget-form .form-side .form
+{
+    border-bottom: 1px solid #695bd0;
+}
+.login-form .form-side .h1,
+.signup-form .form-side .h1,
+.forget-form .form-side .h1,
+.update-form .form-side .h1
+{
+    font-size: 32px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+.forget-form .form-side .p1
+{
+    font-size: 17px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+.form1input1,
+.form1input2,
+.form2input3,
+.form2input6,
+.form3input1
+{
+    width: 100%;
+    height: 45px;
+    color: #000000;
+    outline: none;
+    border: 1px solid #000000;
+    border-radius: 55px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    font-size: 17px;
+}
+.form2input1,
+.form2input2,
+.form2input4,
+.form2input5,
+.form4input1,
+.form4input2
+{
+    width: 47%;
+    height: 45px;
+    outline: none;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 55px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    font-size: 17px;
+}
+.form2input1,
+.form2input4,
+.form4input1
+{
+    float: left;
+}
+.form2input2,
+.form2input5,
+.form4input2
+{
+    float: right;
+}
+.form1-btn,
+.form2-btn,
+.form3-btn,
+.form4-btn
+{
+    width: 100%;
+    height: 55px;
+    color: #ffffff;
+    background-color: #695bd0;
+    border: none;
+    border-radius: 55px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.form1-btn:hover,
+.form2-btn:hover,
+.form3-btn:hover,
+.form4-btn:hover
+{
+    color: #695bd0;
+    background-color: #ffffff;
+    border: 1px solid #695bd0;
+}
+.login-form .form-side .anchors,
+.signup-form .form-side .anchors,
+.forget-form .form-side .anchors
+{
+    text-align: center;
+    padding-top: 15px;
+}
+.login-form .form-side .anchors a,
+.signup-form .form-side .anchors a,
+.forget-form .form-side .anchors a
+{
+    font-size: 17px;
+    line-height: 20px;
+    color: #695bd0;
+}

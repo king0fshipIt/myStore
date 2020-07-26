@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update Password</title>
+    <base href="/" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+    <section class="update-form">
+        <div class="mycontainer">
+            <div class="image-side">
+                <div class="content">
+                    <img src="images/img1.png" alt="">
+                </div>
+            </div>
+            <div class="form-side">
+                <h1 class="h1">Update Password</h1>
+                <div class="form">
+                    <form onsubmit="handleSubmit(event);">
+                        <input required type="password" name="password" id="" placeholder="Password" class="form4input1">
+                        <input required type="password" name="rep_pass" id="" placeholder="Repeat Password" class="form4input2">
+                        <div id="msg" class="msg"></div>
+                        <input type="submit" value="Update Password" class="form4-btn">
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./js/updatePass.js"></script>
+</html>
