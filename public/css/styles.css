@@ -514,6 +514,11 @@ ul > li {
   margin: 15px;
   padding: 20px;
 }
+.purchaseso {
+  border-radius: 5px;
+  border-color: black;
+
+}
 .about-us-div h2 {
   color: #ffffff;
 }

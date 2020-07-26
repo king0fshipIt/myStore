@@ -24,12 +24,9 @@ function fetchPurchases() {
       res.data.map((value, index) => {
         purchases.insertAdjacentHTML(
           "beforeend",
-          `<li class="single-purchase">
-      <div class="item">
-          <div class="pic">
-              <img src="images/img1.png" alt="...">
-          </div>
-          <div class="item-d">
+          `<li class="single-purchase" style="border-bottom: 1.3px solid black; color: #fff; padding-right:10px">
+      <div class="item" >
+          <div class="item-d" >
               <h3>${value.product}</h3>
               <p>${value.quantity} Units</p>
           </div>
