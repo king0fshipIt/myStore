@@ -19,6 +19,9 @@
                         <div>
                             <span class="close-sidebar-btn" onclick="sidebar_close()">x</span>
                         </div>
+                        <ul style="color :red; padding-left:10%;padding-top: 10%;";>
+                            KING STORE
+                          </ul>
                         <ul>
 
                             <li><img src="images/icons/meter1.png" alt=""><a href="./dashboard.html">Dashboard</a></li>
@@ -41,7 +44,7 @@
                 </div>
                 <div class="content">
                     <button class="menu-btn-nav" onclick="sidebar_open()">&#9776;</button><span class="menu-label"
-                        onclick="sidebar_open()">Menu</span>
+                        onclick="sidebar_open()"></span>
                 </div>
             </div>
         </header>
@@ -57,7 +60,7 @@
                     <div class="p-details" id="p-details">
                     </div>
                     <div class="payment" id="payment">
-                        <h3>Pay with Visa/MasterCard</h3>
+                        <h3>Fill in your payment information:</h3>
                         <div>
                             <form onsubmit="handleSubmit(event)" class="payment-form">
                                 <div class="form-control">
@@ -84,7 +87,6 @@
                                     <input required type="number" name="cvv" />
                                 </div>
                                 <div class="form-control">
-                                    <label>Expiry</label>
                                     <input type="submit" value="Pay" class="submit" />
                                 </div>
                                 <p class="msg" id="msg"></p>

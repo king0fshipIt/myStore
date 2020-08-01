@@ -20,6 +20,9 @@
                         <div>
                             <span class="close-sidebar-btn" onclick="sidebar_close()">x</span>
                         </div>
+                        <ul style="color :red; padding-left:10%;padding-top: 10%;";>
+                            KING STORE
+                          </ul>
                         <ul>
 
                             <li><img src="images/icons/meter1.png" alt=""><a href="./dashboard.html">Dashboard</a></li>
@@ -42,7 +45,7 @@
                 </div>
                 <div class="content">
                     <button class="menu-btn-nav" onclick="sidebar_open()">&#9776;</button><span class="menu-label"
-                        onclick="sidebar_open()">Menu</span>
+                        onclick="sidebar_open()"></span>
                 </div>
             </div>
         </header>
@@ -52,18 +55,20 @@
                    
                 </div>
                 <div class="profile">
+                    <h1 style ="text-align: center;">Update your info</h1>
                     <form onsubmit="updateInfo(event);" class="profile-info-form">
+                        
                         <div class="form-controll">
-                            <label for="fname">First Name</label>
-                            <input required type="text" id="fname" name="fname" placeholder="First Name">
+                            <label for="fname">First Name:</label>
+                            <input class="ino" required type="text" id="fname" name="fname" placeholder="First Name">
                         </div>
                         <div class="form-controll">
-                            <label for="lname">Last Name</label>
-                            <input required type="text" id="lname" name="lname" placeholder="Last Name">
+                            <label for="lname">Last Name:</label>
+                            <input class="ino" required type="text" id="lname" name="lname" placeholder="Last Name">
                         </div>
                         <div class="form-controll">
-                            <label for="lname">Email</label>
-                            <input required type="email" id="email" name="email" placeholder="Your email address">
+                            <label for="lname">Email:</label>
+                            <input  class="ino" required type="email" id="email" name="email" placeholder="Your email address">
                         </div>
                         <div class="msg" id="msg1">
                         </div>
