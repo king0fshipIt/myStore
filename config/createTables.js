@@ -28,9 +28,17 @@ createTables = async () => {
         code VARCHAR(255),
         discount_percentage int
         )`;
-    await pool.query(usersQ);
+   const promoinsertQ = `INSERT INTO promocode (id,code, discount_percentage) VALUES ('1','123','20') ON CONFLICT DO NOTHING`;
+   const promoinsertQ1 = `INSERT INTO promocode (id,code, discount_percentage) VALUES ('2','3XCRt','70') ON CONFLICT DO NOTHING`;
+   const promoinsertQ2 = `INSERT INTO promocode (id,code, discount_percentage) VALUES ('3','4DFG','20') ON CONFLICT DO NOTHING`;
+   const promoinsertQ3 = `INSERT INTO promocode (id,code, discount_percentage) VALUES ('4','6DSQW','20') ON CONFLICT DO NOTHING`; 
+   await pool.query(usersQ);
     await pool.query(transactionsQ);
     await pool.query(promocodeQ);
+    await pool.query(promoinsertQ);
+    await pool.query(promoinsertQ1);
+    await pool.query(promoinsertQ2);
+    await pool.query(promoinsertQ3);
   } catch (error) {
     console.log(error);
   }
