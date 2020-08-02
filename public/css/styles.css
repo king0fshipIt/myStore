@@ -417,16 +417,24 @@ ul > li {
 .products .item {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid rgb(15, 5, 59);
+  border: 2px solid rgb(15, 5, 59);
   margin: 5px 5px;
-  padding: 5px;
+  padding: 15px;
   cursor: pointer;
   width: 100%;
+  padding-top:15px; ;
+  background-color: #e7e7e7; color: black;
+  transition-duration: 0.5s;
 }
 .products .item.active {
-  background: gray;
+  background: rgba(204, 173, 173, 0.863);
   color: white;
 }
+.item:hover {
+  background: rgba(204, 173, 173, 0.863);
+  color: white;
+}
+
 .products .item .item-d {
   padding: 5px;
 }
@@ -448,12 +456,19 @@ ul > li {
 .p-details .models .model {
   margin: 10px;
   padding: 10px;
-  border-bottom: 1px solid rgb(15, 5, 59);
+  border: 2px solid rgb(15, 5, 59);
   cursor: pointer;
   min-width: 115px;
+  background-color: #e7e7e7; color: black;
+  transition-duration: 0.5s;
 }
+
 .p-details .models .model.active {
-  background: gray;
+  background: rgba(204, 173, 173, 0.863);
+}
+.model:hover {
+  background: rgba(204, 173, 173, 0.863) !important;
+  color: white!important;
 }
 .payment {
   display: none;

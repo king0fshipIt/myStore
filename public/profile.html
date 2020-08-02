@@ -8,6 +8,11 @@
     <base href="/" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://kit.fontawesome.com/fdd052dd75.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update Password</title>
+    <base href="/" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
 
@@ -76,11 +81,28 @@
                             <button type="submit">Update Info</button>
                         </div>
                     </form>
+                    <div class="form-side" style="width:80%; padding-left:3%;">
+                        <h1 class="h1">Update Password</h1>
+                        <div class="form">
+                            <form onsubmit="handleSubmit(event);">
+                                <input required type="password" name="password" id="" placeholder="Password" class="form4input1">
+                                <input required type="password" name="rep_pass" id="" placeholder="Repeat Password" class="form4input2">
+                                <div id="msg" class="msg"></div>
+                                <input type="submit" value="Update Password" class="form4-btn">
+                            </form>
+                        </div>
                 </div>
+                
+
+        
+    </div>
             </div>
         </section>
     </div>
+    
     <script src="./js/profile.js"></script>
+    <script src="./js/updatePass.js"></script>
 </body>
 
 </html>
+

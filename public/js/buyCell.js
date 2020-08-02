@@ -88,11 +88,19 @@ function fetchData() {
         item_d.classList.add("item-d");
         var item_dH3 = document.createElement("h3");
         var item_dp1 = document.createElement("p");
+        var item_stock = document.createElement("p");
         // var item_dp2 = document.createElement("2");
         item_dH3.innerHTML = value.name;
         item_dp1.innerHTML = value.description;
+        if(value.inStock == "true")
+        {
+          item_stock.innerHTML = "<div style='color: green;'>in stock</div>";
+        } else {
+          item_stock.innerHTML = "<div style='color: red;'>out of stock</div>";
+        }
         item_d.appendChild(item_dH3);
         item_d.appendChild(item_dp1);
+        item_d.appendChild(item_stock);
         item.appendChild(pic);
         item.appendChild(item_d);
         productsDiv.appendChild(item);
